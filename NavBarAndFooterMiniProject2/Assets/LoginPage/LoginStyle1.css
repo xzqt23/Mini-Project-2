@@ -1,0 +1,80 @@
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000030;
+  font-family: "poppins", sans-serif;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: white;
+}
+
+.main img {
+  width: 20em;
+}
+
+.main article:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main article:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+  width: 80%;
+}
+
+.main article:nth-child(2) > .check-box {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+#email, #password {
+  background-color: #000030;
+  width: 25em;
+  height: 2.5em;
+}
+
+#btnLogIn {
+  background-color: #105696;
+  color: white;
+  width: 25em;
+  height: 2.5em;
+  border-radius: 6px;
+}
+
+#btn-Reg {
+  background-color: #105696;
+  color: white;
+  width: 25em;
+  height: 2.5em;
+  border-radius: 6px;
+  /* border: none; */
+}
+
+#logGoogle {
+  background-color: #105696;
+  border-radius: 6px;
+  color: white;
+  width: 25em;
+  height: 2.5em;
+  /* border: none; */
+}
+
+.signupText {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}/*# sourceMappingURL=LoginStyle1.css.map */
