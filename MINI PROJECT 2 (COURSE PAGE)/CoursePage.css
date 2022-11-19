@@ -1,0 +1,80 @@
+* {
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  .backGround {
+    background-color: #101241;
+  }
+
+  .badge {
+    height: fit-content;
+    background-color: #2D4059;
+  }
+
+  .paragraphCourse{
+    text-align: justify;
+  }
+
+  .heartIcon {
+    border-radius: 44.79px;
+    border: 1px solid black;
+    height: 45px;
+    width: 50px;
+    background-color: whitesmoke;
+  }
+  .LearnMoreBtn {
+    border: 1px solid #008CF0;
+    height: 45px;
+    width: 140px;
+    border-radius: 37px;
+    background-color: #101241;
+    animation: learnMoreBtnAnimation 872ms infinite linear;
+  }
+
+  @keyframes learnMoreBtnAnimation {
+    to {
+      font-size: 15px;
+      font-weight: bolder;
+      line-height: 0.2;
+      letter-spacing: 2px;
+    }
+  }
+
+  .loadMoreCourse{
+    background-color: #008CF0;
+    height: 45px;
+    width: 120px;
+    border-radius: 10px ;
+  }
+
+  .imgCarousel{
+    width: 450px;
+    border-radius: 10px;
+  }
+  
+  .imgReview {
+    border-radius: 50px;
+  }
+
+  .borderReview {
+    border-radius: 16px;
+    background-color: rgba(57, 57, 83, 0.40)
+  }
+
+  .iconPrice {
+    color: #25CCF7;
+  }
+
+  .namePrice {
+    color: #25CCF7;
+  }
+  
+
+  .columnPricing:hover {
+    transform: scale(1.2);
+    z-index: 1;
+    transition: 2s;
+    background-color: #008CF0;
+    
+  }
