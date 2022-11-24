@@ -10,6 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Icon import  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!-- CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -24,6 +29,7 @@
     <title>Document</title>
   </head>
   <link rel="stylesheet" href="CoursePage.css" />
+  
 
   <body>
     <div class="backGround">
@@ -38,12 +44,17 @@
           <p class="fs-1 text-center mb-5 text-light fw-bold">Course Available</p>
 
           <!-- First Column for first row : Photo -->
-          <div class="col-xl-6 col-12">
+          <div class="col-xl-6 col-12 img_main">
             <img
               src="https://images.unsplash.com/photo-1614064548237-096f735f344f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
               alt="Cybersecurity Fundamentals"
-              class="w-100 rounded-3 d-xl-"
+              class="rounded-3 img_course"
             />
+            <div class="info_overlay">
+             
+                <video src="./Videos/Video3.mp4" controls class="w-100 h-100"></video>
+             
+            </div>
           </div>
 
           <!-- Second Column for first row : Description -->
@@ -98,18 +109,25 @@
             </div>
           </div>
         </div>
+
+        
       </section>
 
-      <!-- Start of Course 3rd ROW -->
+      <!-- Start of Course 2rd ROW -->
       <section class="container pt-5 mt-4">
         <div class="row">
           <!-- First Column for 2nd row : Photo -->
-          <div class="col-xl-6 col-12">
+          <div class="col-xl-6 col-12 img_main">
             <img
               src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
               alt="Security Architecture"
-              class="w-100 rounded-3 d-xl-"
+              class="w-100 rounded-3 img_course"
             />
+            <div class="info_overlay">
+             
+              <video src="./Videos/Video4.mp4" controls class="w-100 h-100"></video>
+           
+          </div>
           </div>
 
           <!-- Second Column for 2nd row row : Description -->
@@ -169,12 +187,17 @@
       <section class="container pt-5 mt-4">
         <div class="row">
           <!-- First Column for 3rd row : Photo -->
-          <div class="col-xl-6 col-12">
+          <div class="col-xl-6 col-12 img_main">
             <img
               src="https://images.unsplash.com/photo-1629904853716-f0bc54eea481?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
               alt="Security Architecture"
-              class="w-100 rounded-3 d-xl-"
+              class="w-100 rounded-3 img_course"
             />
+            <div class="info_overlay">
+             
+              <video src="./Videos/Video5.mp4" controls class="w-100 h-100"></video>
+           
+          </div>
           </div>
 
           <!-- Second Column for 3rd row row : Description -->
@@ -237,12 +260,17 @@
       <section class="container pt-5 mt-4">
         <div class="row">
           <!-- First Column for 3rd row : Photo -->
-          <div class="col-xl-6 col-12">
+          <div class="col-xl-6 col-12 img_main">
             <img
               src="https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
               alt="Security Architecture"
-              class="w-100 rounded-3 d-xl-"
+              class="w-100 rounded-3 img_course"
             />
+            <div class="info_overlay">
+             
+              <video src="./Videos/Video6.mp4" controls class="w-100 h-100"></video>
+           
+          </div>
           </div>
 
           <!-- Second Column for 3rd row row : Description -->
@@ -313,8 +341,11 @@
         <p class="text-center mb-0 pt-0 text-light">
           Start your journey towards becoming a Cybersecurity Defender with the
           help of more than
+          <span class="d-md-none">
+            10 cyber defender instructor with fun exercises and projects.
+          </span>
         </p>
-        <p class="text-center mt-0 pt-0 text-light">
+        <p class="text-center mt-0 pt-0 text-light d-none d-md-block">
           10 cyber defender instructor with fun exercises and projects.
         </p>
 
@@ -325,25 +356,38 @@
         >
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="row d-flex flex-row justify-content-around">
-                <div class="col-4">
+
+              <div class="row ps-lg-3 ps-xl-5 ms-xl-4 ps-xxl-0 ms-xxl-0 ">
+
+                <div class="col-12 d-flex d-lg-none d-sm-flex justify-content-center ">
                   <!-- Display Block -->
                   <img
                     src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
-                    class="d-block imgCarousel"
+                    class="d-block imgCarousel "
                     alt="Slide 1"
                   />
                 </div>
+
+                <div class="col-lg-6 col-xxl-4 d-none d-lg-block">
+                  <!-- Display Block -->
+                  <img
+                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+                    class="d-block imgCarousel "
+                    alt="Slide 1"
+                  />
+                </div>
+
                 <!-- Display Block -->
-                <div class="col-4">
+                <div class="col-lg-6 col-xxl-4 d-none d-lg-block ">
                   <img
                     src="https://images.unsplash.com/photo-1547860664-b8537ca5f833?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
                     class="d-block imgCarousel"
                     alt="Slide 1"
                   />
                 </div>
+
                 <!-- Display None -->
-                <div class="col-4 d-xxl-block d-none">
+                <div class="col-xxl-4 d-xxl-block d-none">
                   <img
                     src="https://images.unsplash.com/photo-1573164574511-73c773193279?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
                     class="d-block imgCarousel"
@@ -353,18 +397,28 @@
               </div>
             </div>
 
+
             <div class="carousel-item active">
-              <div class="row d-flex flex-row justify-content-around">
+              <div class="row ps-lg-3 ps-xl-5 ms-xl-4 ps-xxl-0 ms-xxl-0">
                 <!-- Display Block -->
-                <div class="col-4">
+                <div class="col-12 d-flex d-lg-none d-sm-flex justify-content-center">
                   <img
                     src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
                     class="d-block imgCarousel"
                     alt="Slide 1"
                   />
                 </div>
+
+                <div class="col-lg-6 col-xxl-4 d-none d-lg-block">
+                  <img
+                    src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                    class="d-block imgCarousel"
+                    alt="Slide 1"
+                  />
+                </div>
+
                 <!-- Display Block -->
-                <div class="col-4">
+                <div class="col-lg-6 col-xxl-4 d-none d-lg-block">
                   <img
                     src="https://images.unsplash.com/photo-1572021335469-31706a17aaef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
                     class="d-block imgCarousel"
@@ -373,7 +427,7 @@
                 </div>
 
                 <!-- Display None -->
-                <div class="col-4 d-xxl-block d-none">
+                <div class="col-xxl-4 d-xxl-block d-none">
                   <img
                     src="https://images.unsplash.com/photo-1552793494-111afe03d0ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
                     class="d-block imgCarousel"
@@ -382,6 +436,7 @@
                 </div>
               </div>
             </div>
+
           </div>
           <a
             class="carousel-control-prev"
@@ -410,14 +465,17 @@
         <p class="text-center text-light mb-0">
           Whether you need to learn to code to be a security professional
           depends on two things:
+          <span class="d-xl-none">
+            your desire to “hack” and where you want to get a job.
+          </span>
         </p>
-        <p class="text-center text-light mt-0">
+        <p class="text-center text-light mt-0 d-xl-block d-none">
           your desire to “hack” and where you want to get a job.
         </p>
 
         <div class="row d-flex flex-row justify-content-evenly mt-5">
           <!-- 1ST COLUMN -->
-          <div class="borderReview col-xl-3 col-md-5">
+          <div class="borderReview col-xl-3 col-md-5 col-10 col-sm-8">
             <div class="text-center">
               <img
                 src="https://images.pexels.com/photos/3936894/pexels-photo-3936894.jpeg?auto=compress&cs=tinysrgb&w=1600"
@@ -448,7 +506,7 @@
 
           <!-- 2ND COLUMN -->
           <div
-            class="borderReview col-xl-3 col-md-5 mt-md-0 mt-5"
+            class="borderReview col-xl-3 col-md-5 mt-md-0 mt-5 col-10 col-sm-8"
           >
             <div class="text-center">
               <img
@@ -481,7 +539,7 @@
 
           <!-- 3RD COLUMN -->
           <div
-            class="borderReview col-xl-3 col-md-5 mt-xl-0 mt-md-5 mt-5"
+            class="borderReview col-xl-3 col-md-5 mt-xl-0 mt-md-5 mt-5 col-10 col-sm-8"
           >
             <div class="text-center">
               <img
@@ -526,16 +584,17 @@
 
         <!--  -->
         <div class="row mt-5 pt-1 d-flex flex-row justify-content-evenly">
+
           <!-- COLUMN 1 -->
-          <div class="columnPricing col-lg-4 col-sm-6 col-12 border border-1">
+          <div class="columnPricing col-lg-4 col-sm-6 col-10 border border-1">
             <div class="pt-5 ps-5 pe-5 pb-4">
               <p class="namePrice">ONE TIME PAYMENT</p>
               <p class="text-light fs-1 fw-bold">50,000 PHP</p>
-              <p class="text-light small mt-xxl-0 pt-xxl-0 mt-5 pt-1">
+              <p class="text-light small mt-xxl-0 pt-xxl-0 mt-sm-5 pt-1">
                 Go for convenience and pay a one-time fixed fee at the time of
                 enrollment.
               </p>
-              <div class="mt-5 pt-2">
+              <div class="mt-sm-5 pt-sm-2 pt-1">
                 <p class="text-light">
                   <span
                     ><i
@@ -567,7 +626,7 @@
 
 
           <!-- 2ND COLUMN -->
-          <div class="columnPricing col-lg-4 col-sm-6 col-12 border border-1">
+          <div class="columnPricing col-lg-4 col-sm-6 col-10 border border-1">
             <div class="pt-5 ps-5 pe-5 pb-4">
               <p class="namePrice">INCOME SHARE AGREEMENT</p>
               <p class="text-light d-xxl-flex flex-xxl-row align-items-center gap-xxl-1">
@@ -577,12 +636,12 @@
                 </span>
                 <p class="d-xxl-none d-block text-light fw-semibold"> of your future monthly salary</p>
               </p>
-              <p class="text-light small">
+              <p class="text-light small mb-0 pb-0">
                 Go for convenience and pay a one-time fixed fee at the time of
                 enrollment.
               </p>
               
-              <div class="mt-5 pt-2">
+              <div class="mt-5 pt-2 mt-0 pt-0">
                 <p class="text-light">
                   <span
                     ><i
@@ -613,7 +672,7 @@
           </div>
 
           <!-- 3RD COLUMN -->
-          <div class="columnPricing col-lg-4 col-sm-6 col-12 border border-1">
+          <div class="columnPricing col-lg-4 col-sm-6 col-10 border border-1">
             <div class="pt-5 ps-5 pe-5 pb-4">
               <p class="namePrice">INSTALLMENT PLANS</p>
               <p class="text-light d-xxl-flex flex-xxl-row align-items-center gap-xxl-1">
@@ -657,6 +716,9 @@
         </div>
       </section>
 
+
+ 
+
    
       <!-- background -->
     </div>
@@ -666,5 +728,6 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+    <script src="../Navbar/main.js"></script>
   </body>
 </html>
