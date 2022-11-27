@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!-- Bootstrap -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+       <!-- Fonts -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="./loginStyle.css">
+   
+       <!-- Icon link Boxicon-->
+       <link rel="stylesheet"
+       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+       <!-- or -->
+       <link rel="stylesheet"
+       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+       <link rel="stylesheet" href="./dashboard2Style.css">
+       
+    <title>Document</title>
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <!--<img src="logo.png" alt="">-->
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Dash board kit</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">Courses</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Classes</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-pie-chart-alt icon' ></i>
+                            <span class="text nav-text">Inbox</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="text">
+            <ul class="nav_main">
+            <!-- <li><a href="#"><input type="search" name="" id="searchBar1" placeholder="Search here.."></a></li> -->
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul></div>
+        <section class="menu-card">
+            <div class="menuTitle1">
+                <div class="subMenuTitle">
+                  
+                    <h3>Hello Derwin, Welcome!! 👋🏻</h3>
+                    <h1>Your Dashboard today</h1>
+                    
+                  
+                </div>
+            </div>
+            <!-- <article class="main-card">
+                <div class="card">
+                    <img src="../sidebar/UI icon/Group 395 (1).png" alt="">
+                    <h1>224.5k <span>26.4%</span></h1>
+                    <p>Opened Course</p>
+                </div>
+                <div class="card">
+                    <img src="../sidebar/UI icon/Group 394.png" alt="">
+                    <h1>647 <span>14%</span></h1>
+                    <p>Certificate earned</p>
+                </div>
+                <div class="card">
+                    <img src="../sidebar/UI icon/Group 393.png" alt="">
+                    <h1>834 <span>12%</span></h1>
+                    <p>Course in progress</p>
+                </div>
+                <div class="card"><img src="../sidebar/UI icon/Group 392.png" alt="">
+                    <h1>1.4k</h1>
+                    <p>Career path</p>
+                </div>
+            </article> -->
+            <article id="functionalCard">
+                <section class="main-section">
+                    <div class="course-header">
+                      <i class="mode-switch fas fa-moon"></i>
+                      <h1>Your Courses</h1>
+                      <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+                      
+                    </div>
+                    <div class="coursesMain">
+                        <div class="courses">
+                            <div class="course html" tabindex="1">
+                              <div class="course-info">
+                                <span>Course</span>
+                                <h5>Course Overview</h5>
+                                <a href="#" tabindex="2">Chapters <i class="fas fa-chevron-right"></i></a>
+                              </div>
+                              <div class="course-more">
+                                <div class="details">
+                                  <h5>Week 1</h5>
+                                  <div class="progress">
+                                    <span class="progress-bar"><span></span></span>
+                                    <span class="progress-text">2/10 Lessons Completed</span>
+                                  </div>
+                                </div>
+                                <h2 class="name">Getting Start</h2>
+                                <a class="chapters" href="#" tabindex="3">Chapters <i class="fas fa-chevron-right"></i></a>
+                                <a class="continue-btn html" tabindex="4" href="#">Continue</a>
+                              </div>
+                            </div>
+                            <div class="course css" tabindex="5">
+                              <div class="course-info">
+                                <span>Course</span>
+                                <h5>What is 
+                                    CyberSecurity</h5>
+                                <a href="#" tabindex="6">Chapters <i class="fas fa-chevron-right"></i></a>
+                              </div>
+                              <div class="course-more">
+                                <div class="details">
+                                  <h5>Week 2</h5>
+                                  <div class="progress">
+                                    <span class="progress-bar"><span></span></span>
+                                    <span class="progress-text">9/10 Lessons Completed</span>
+                                  </div>
+                                </div>
+                                <h2 class="name">Goal of security</h2>
+                                <a class="chapters" href="#" tabindex="Week 1">Chapters <i class="fas fa-chevron-right"></i></a>
+                                <a class="continue-btn css" tabindex="8" href="#">Continue</a>
+                              </div>
+                            </div>
+                            <div class="course js" tabindex="9">
+                              <div class="course-info">
+                                <span>Course</span>
+                                <h5>The CIA triad
+                                    </h5>
+                                <a href="#">Chapters <i class="fas fa-chevron-right"></i></a>
+                              </div>
+                              <div class="course-more">
+                                <div class="details">
+                                  <h5>Week 3</h5>
+                                  <div class="progress">
+                                    <span class="progress-bar"><span></span></span>
+                                    <span class="progress-text">4/10 Lessons Completed</span>
+                                  </div>
+                                </div>
+                                <h2 class="name">Getters and Setters</h2>
+                                <a class="chapters" href="#" tabindex="10">Chapters <i class="fas fa-chevron-right"></i></a>
+                                <a class="continue-btn js" tabindex="11" href="#">Continue</a>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+
+                  </section>
+                  <section class="html-course course-section">
+                    <a class="back"><i class="fas fa-chevron-left"></i> Back to Courses</a>
+                    <div class="courses">
+                      <div class="course html checked" tabindex="1">
+                        <div class="course-info">
+                          <span>Lesson</span>
+                          <h5>Intro to Semantic HTML</h5>
+                        </div>
+                        <div class="course-more">
+                          <div class="details">
+                            <h5>Lesson 1</h5>
+                            <span class="time">4 min.</span>
+                          </div>
+                          <p class="description">You have completed this lesson.</p>
+                          <button class="read-btn mark" tabindex="2">Mark as Incomplete</button>
+                          <a class="read-btn" tabindex="3">Read</a>
+                        </div>
+                      </div>
+                      <div class="course html checked" tabindex="4">
+                        <div class="course-info">
+                          <span>Lesson</span>
+                          <h5>More on semantics</h5>
+                        </div>
+                        <div class="course-more">
+                          <div class="details">
+                            <h5>Lesson 2</h5>
+                            <span class="time">4 min.</span>
+                          </div>
+                          <p class="description">You have completed this lesson.</p>
+                          <button class="read-btn mark" tabindex="5">Mark as Incomplete</button>
+                          <a class="read-btn" tabindex="6">Read</a>
+                        </div>
+                      </div>
+                      <div class="course html" tabindex="7">
+                        <div class="course-info">
+                          <span>Lesson</span>
+                          <h5>Uses for semantics</h5>
+                        </div>
+                        <div class="course-more">
+                          <div class="details">
+                            <h5>Lesson 3</h5>
+                            <span class="time">4 min.</span>
+                          </div>
+                          <p class="description">You have not completed this lesson yet.</p>
+                          <button class="read-btn mark" tabindex="8">Mark as Done</button>
+                          <a class="read-btn" tabindex="9">Read</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <!-- <section class="css-course course-section">
+                    <a class="back"><i class="fas fa-chevron-left"></i> Back to Courses</a>
+                    <div class="courses">
+                      <div class="course css checked" tabindex="1">
+                        <div class="course-info">
+                          <span>Lesson</span>
+                          <h5>Special Selectors</h5>
+                        </div>
+                        <div class="course-more">
+                          <div class="details">
+                            <h5>Lesson 1</h5>
+                            <span class="time">5 min.</span>
+                          </div>
+                          <p class="description">You have completed this lesson.</p>
+                          <button class="read-btn mark" tabindex="2">Mark as Incomplete</button>
+                          <a class="read-btn" tabindex="3">Read</a>
+                        </div>
+                      </div>
+                      <div class="course css checked" tabindex="4">
+                        <div class="course-info">
+                          <span>Lesson</span>
+                          <h5>Sibling Selectors</h5>
+                        </div>
+                        <div class="course-more">
+                          <div class="details">
+                            <h5>Lesson 2</h5>
+                            <span class="time">4 min.</span>
+                          </div>
+                          <p class="description">You have completed this lesson.</p>
+                          <button class="read-btn mark" tabindex="5">Mark as Incomplete</button>
+                          <a class="read-btn" tabindex="6">Read</a>
+                        </div>
+                      </div>
+                      <div class="course css" tabindex="7">
+                        <div class="course-info">
+                          <span>Lesson</span>
+                          <h5>Adjacent Selectors</h5>
+                        </div>
+                        <div class="course-more">
+                          <div class="details">
+                            <h5>Lesson 3</h5>
+                            <span class="time">6 min.</span>
+                          </div>
+                          <p class="description">You have not completed this lesson yet.</p>
+                          <button class="read-btn mark" tabindex="8">Mark as Done</button>
+                          <a class="read-btn" tabindex="9">Read</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section> -->
+                  <!-- <section class="js-course course-section">
+                    <a class="back"><i class="fas fa-chevron-left"></i> Back to Courses</a>
+                    <div class="courses">
+                      <div class="course js checked" tabindex="1">
+                        <div class="course-info">
+                          <span>Lesson</span>
+                          <h5>Destructuring</h5>
+                        </div>
+                        <div class="course-more">
+                          <div class="details">
+                            <h5>Lesson 1</h5>
+                            <span class="time">4 min.</span>
+                          </div>
+                          <p class="description">You have completed this lesson.</p>
+                          <button class="read-btn mark" tabindex="2">Mark as Incomplete</button>
+                          <a class="read-btn" tabindex="3">Read</a>
+                        </div>
+                      </div>
+                      <div class="course js checked" tabindex="4">
+                        <div class="course-info">
+                          <span>Lesson</span>
+                          <h5>Template Literals</h5>
+                        </div>
+                        <div class="course-more">
+                          <div class="details">
+                            <h5>Lesson 2</h5>
+                            <span class="time">4 min.</span>
+                          </div>
+                          <p class="description">You have completed this lesson.</p>
+                          <button class="read-btn mark" tabindex="5">Mark as Incomplete</button>
+                          <a class="read-btn" tabindex="6">Read</a>
+                        </div>
+                      </div>
+                      <div class="course js" tabindex="7">
+                        <div class="course-info">
+                          <span>Lesson</span>
+                          <h5>Getters and Setters</h5>
+                        </div>
+                        <div class="course-more">
+                          <div class="details">
+                            <h5>Lesson 3</h5>
+                            <span class="time">4 min.</span>
+                          </div>
+                          <p class="description">You have not completed this lesson yet.</p>
+                          <button class="read-btn mark" tabindex="8">Mark as Done</button>
+                          <a class="read-btn" tabindex="9">Read</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section> -->
+                  <!-- Course Section Template -->
+                  <!-- <section class="INSERT COURSE NAME-course course-section">
+                    <a class="back"><i class="fas fa-chevron-left"></i> Back to Home</a>
+                    <div class="courses"></div>
+                  </section> -->
+                  <div class="overlay">
+                    <p class="overlay-message"></p>
+                  </div>
+            </article>
+            <div class="menuTitle">
+                <h1>Knowledge Base</h1>
+            </div>
+            <article class="docu">
+                <div class="docuFile"><h5>Module</h5> <img src="../folder-open.png" alt="">   <img src="../sidebar/sidebar/chevron-right.png" alt="">
+                </div>
+                <div class="docuFile"><h5>Assignment</h5><img src="../sidebar/UI icon/vuesax/bulk/folder-open.png" alt=""> <img src="../sidebar/sidebar/chevron-right.png" alt="">   
+                </div>
+                <div class="docuFile"><h5>PDF File</h5> <img src="../folder-open.png" alt=""> <img src="../sidebar/sidebar/chevron-right.png" alt="">
+                </div>
+                <div class="docuFile"><h5>PPT File</h5> <img src="../folder-open.png" alt=""> <img src="../sidebar/sidebar/chevron-right.png" alt="">
+                </div>
+    
+            </article>
+        </section>
+        <main class="main-feature">
+        <menu id="navbarCard">
+            <ul id="navbarMain">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">In Progress</a></li>
+            <li><a href="#">Complete</a></li>
+            </ul>
+            <div class="main-courseCard">
+               
+                <div class="courseCard">
+                    <div class="image-container">
+                        <img src="/sidebar/UI Progress img/Cyber-Security-Fundamentals.jpg" alt="">
+                    </div>
+                    <div class="titleCardContent">
+                        <h3>Course | <span>NDKAK</span></h3>
+                        <h4>Cybersecurity Fundamentals</h4>
+                        <p>Need more time to complete this course? Push your estimated end date to 12/29/2022 PST and achieve your goal.
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="courseCard">
+                    <div class="image-container">
+                        <img src="../Mini-Project-2/MINI PROJECT 2 (COURSE PAGE)/Images/img1.png" alt="">
+                    </div>
+                    <div class="titleCardContent">
+                        <h3>Course | <span>NDKAK</span></h3>
+                        <h4>Cybersecurity Fundamentals</h4>
+                        <p>Need more time to complete this course? Push your estimated end date to 12/29/2022 PST and achieve your goal.
+                        </p>
+                    </div>
+                </div>
+                <div class="courseCard">
+                    <div class="image-container">
+                        <img src="../Mini-Project-2/MINI PROJECT 2 (COURSE PAGE)/Images/img1.png" alt="">
+                    </div>
+                    <div class="titleCardContent">
+                        <h3>Course | <span>NDKAK</span></h3>
+                        <h4>Cybersecurity Fundamentals</h4>
+                        <p>Need more time to complete this course? Push your estimated end date to 12/29/2022 PST and achieve your goal.
+                        </p>
+                    </div>
+                </div>
+                <div class="courseCard">
+                    <div class="image-container">
+                        <img src="../Mini-Project-2/MINI PROJECT 2 (COURSE PAGE)/Images/img1.png" alt="">
+                    </div>
+                    <div class="titleCardContent">
+                        <h3>Course | <span>NDKAK</span></h3>
+                        <h4>Cybersecurity Fundamentals</h4>
+                        <p>Need more time to complete this course? Push your estimated end date to 12/29/2022 PST and achieve your goal.
+                        </p>
+                    </div>
+                </div>
+        
+        </menu>
+        <aside class="Main-aside">
+            <!-- Calendar -->
+            <div class="MainCalendar">
+              <div class="calendar">
+                <div class="header">
+                  <a data-action="prev-month" href="javascript:void(0)" title="Previous Month"><i></i></a>
+                  <div class="text" data-render="month-year"></div>
+                  <a data-action="next-month" href="javascript:void(0)" title="Next Month"><i></i></a>
+                </div>
+                <div class="months" data-flow="left">
+                  <div class="month month-a">
+                    <div class="render render-a"></div>
+                  </div>
+                  <div class="month month-b">
+                    <div class="render render-b"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+         
+
+          <!-- Todo list -->
+          <div class="todoContainer">
+            <h2>Type your notes here!</h2>
+            <h3>Add Item</h3>
+            <p>
+                <input id="new-task" type="text"><button>Add</button>
+            </p>
+    
+            <h3>Todo</h3>
+            <ul id="incomplete-tasks">
+                <li><input type="checkbox"><label></label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+                <li><input type="checkbox"><label></label><input type="text" value="Go Shopping"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+            </ul>
+    
+            <h3>Completed</h3>
+            <ul id="completed-tasks">
+                <li><input type="checkbox" checked><label></label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+            </ul>
+        </div>
+    
+          </aside>
+    </main>
+    </section>
+      
+    <script src="./dashboard.js"></script>
+    <script src="./timer.js"></script>
+</body>
+</html>
