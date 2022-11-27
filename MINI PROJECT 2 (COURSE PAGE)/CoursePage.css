@@ -99,6 +99,11 @@
     border-radius: 10px ;
   }
 
+  /* For JS code */
+  .moreCourse {
+    display: none;
+  }
+
   .imgCarousel{
     width: 450px;
     border-radius: 10px;
@@ -130,6 +135,12 @@
     
   }
 
+  #more {
+    display: none;
+  }
 
+  #learnMoreContent_1 {
+    display: none;
+  }
 
 

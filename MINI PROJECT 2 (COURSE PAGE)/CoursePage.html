@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Icon import google fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,137 +13,266 @@
       rel="stylesheet"
     />
 
-    <!-- Icon import  -->
+    <!-- Icon import from remixicon  -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- CSS only -->
+    <!-- CSS only: bootstrap link -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+
+    <!-- Font awesome link -->
     <script
       src="https://kit.fontawesome.com/ad1db8f62d.js"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+    </script>
     <title>Document</title>
+
   </head>
+
+  <!-- Link for external CSS -->
   <link rel="stylesheet" href="CoursePage.css" />
   
 
   <body>
+
+    <!-- main background of the web page -->
     <div class="backGround">
 
+      <!-- Banner section of the webpage -->
       <section class="container-fluid m-0 p-0">
        <video class="w-100 p-0 m-0" src="./Videos/Video1.mp4" autoplay loop muted></video>
       </section>
 
-      <!-- START OF COURSES -->
-      <section class="container pt-5">
+      <!--TODO: This is the start section of the COURSES area-->
+      <section class="container pt-5" id="courseFirst">
         <div class="row">
           <p class="fs-1 text-center mb-5 text-light fw-bold">Course Available</p>
 
-          <!-- First Column for first row : Photo -->
+          <!-- First Column/first row: the course section area-->
           <div class="col-xl-6 col-12 img_main">
             <img
               src="https://images.unsplash.com/photo-1614064548237-096f735f344f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
               alt="Cybersecurity Fundamentals"
-              class="rounded-3 img_course"
-            />
+              class="rounded-3 img_course"/>
+
+            <!-- TODO: This is for the overlay video when hover -->
             <div class="info_overlay">
-             
                 <video src="./Videos/Video3.mp4" controls class="w-100 h-100"></video>
-             
             </div>
           </div>
 
-          <!-- Second Column for first row : Description -->
+          <!-- Second Column/first row: the course section area-->
           <div class="col-xl-6 col-12 mt-xxl-2 mt-xl-0 mt-4 pt-2">
-            <!-- flex -->
+            
+            <!-- Flex system is apply in this section.. -->
             <div class="d-flex flex-row justify-content-between">
               <p class="text-primary fw-semibold">STARTUP</p>
               <span class="badge">
                 <span>
                   <i class="fa fa-star text-warning" aria-hidden="true"></i>
-                </span>
-                4.9</span
-              >
+                </span>4.9
+              </span>
             </div>
+
             <p class="fs-2 text-light fw-semibold">Cybersecurity Fundamentals</p>
             <p class="mt-xxl-3 pt-xxl-3 text-light paragraphCourse">
               This course cover all the aspects that anyone needs for a good
               start in cybersecurity, including the basics of this fields : Like
-              what exactly is cybersecutiy? what are the differences between
+              what exactly is cyber security? what are the differences between
               cybersecurity and information security? Is the cybersecurity
-              marketsize really huge? and what does it cover exactly?
+              market size really huge? and what does it cover exactly?
             </p>
 
-            <!-- flex system been used -->
+            <!-- Flex system is apply in this section.. -->
             <div class="d-flex flex-row gap-5 mt-xxl-5 mt-xl-0 mt-4 pt-2">
-              <!-- flex system been used -->
+              <!-- Flex system is apply in this section.. -->
               <div class="d-flex flex-row gap-2 align-content-center">
                 <i class="fa fa-clock-o text-primary" aria-hidden="true"></i>
                 <p class="text-light">12 weeks</p>
               </div>
+              <!-- Flex system is apply in this section.. -->
               <div class="d-flex flex-row gap-2 align-content-center">
                 <i class="fa fa-line-chart text-primary" aria-hidden="true"></i>
                 <p class="text-light">Progress</p>
               </div>
             </div>
 
-            <!-- flex system been used -->
+            <!-- Flex system is apply in this section.. -->
             <div class="mt-1 d-flex flex-row align-items-center gap-4">
+
+              <!-- division for learn more button -->
               <div>
-                <button class="LearnMoreBtn text-light">
+                <button class="LearnMoreBtn text-light" onclick="myLearn()" id="learnMore">
                   Learn More
                   <span>
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
                   </span>
                 </button>
               </div>
+
+              <!-- division for heart icon -->
               <div>
                 <button class="heartIcon">
                   <i class="fa fa-heart-o fs-5" aria-hidden="true"></i>
                 </button>
               </div>
+
             </div>
           </div>
         </div>
-
-        
       </section>
 
-      <!-- Start of Course 2rd ROW -->
+      <!--FIXME: This is the first section pop up when you click the learn more in the first row-->
+      <section class="container pt-5" id="learnMoreContent_1">
+        <div class="row">
+
+          <!-- First Column/first row: the course section area-->
+          <div class="col-xl-6 col-12 img_main">
+            <div class="row">
+
+              <div class="col-12">
+                <p class="fs-2 fw-semibold text-light">Cybersecurity Fundamentals</p>
+              </div>
+
+              <div class="col-4 d-flex flex-column justify-content-center align-items-center align-content-center border border-1">
+                <p class="mb-0"><span><i class="fa fa-star text-warning" aria-hidden="true"></i> </span>
+                   <span class="fs-5 text-light fw-semibold text-center">4.6/5</span> 
+                </p>
+                <p class="small text-primary text-center">8,242 ratings</p>
+              </div>
+
+              <div class="col-4 d-flex flex-column justify-content-center align-items-center align-content-center border border-1">
+                <p class="fs-5 mb-0 text-light fw-semibold">8 Months</p>
+                <p class="text-center small text-primary">Under 4 hours of study per week</p>
+              </div>
+
+              <div class="col-4 d-flex flex-column justify-content-center align-content-center border border-1 align-items-center">
+                <p class="fs-5 mb-0 fw-semibold text-light">Beginner Level</p>
+                <p class="small text-center text-primary"> No prior experience required.</p>
+              </div>
+
+              <div class="col-12">
+                <p class="fs-5 mt-4 text-light fw-semibold">About this Professional Certificate</p>
+                <p class="text-light small paragraphCourse">A growing number of exciting, well-paying jobs in today’s security industry do not require a college degree. This Professional Certificate will give you the technical skills to become job-ready for a Cybersecurity Analyst role. Instructional content and labs will introduce you to concepts including network security, endpoint protection, incident response, threat intelligence, penetration testing, and vulnerability assessment.</p>
+
+                <p class="text-light fw-semibold">Skills you will gain </p>
+                <div class="row d-flex flex-row gap-3 align-content-center  align-items-center">
+                  <span class="col-2 small text-primary border border-1 p-1 rounded-5">Cybersecurity</span>
+                  <span class="col-2 small text-primary border border-1 p-1 text-center rounded-5">IT analyst</span>
+                  <span class="col-2 small text-primary border border-1 text-center rounded-5">Security analyst</span>
+                  <span class="col-2 small text-primary border border-1 text-center rounded-5">Malware</span>
+                </div>
+               
+              </div>
+
+      
+
+            </div>
+
+            <!-- TODO: This is for the overlay video when hover -->
+            <!-- <div class="info_overlay">
+                <video src="./Videos/Video3.mp4" controls class="w-100 h-100"></video>
+            </div> -->
+          </div>
+
+          <!-- Second Column/first row: the course section area-->
+          <div class="col-xl-6 col-12 mt-xxl-2 mt-xl-0 mt-4 pt-2">
+          
+            <p class="fs-5 text-light fw-semibold">What makes this course unique?</p>
+            <p class="text-light paragraphCourse ps-3 small d-flex gap-2">
+              <span><i class="fa fa-level-up text-primary" aria-hidden="true"></i></span>
+              Gain an ideal mix of theoretical and applied skills.
+            </p>
+
+            <p class="text-light paragraphCourse ps-3 small d-flex gap-2">
+              <span><i class="fa fa-leanpub text-primary" aria-hidden="true"></i></span>
+              Learn from faculty with decades of experience.
+            </p>
+
+            <p class="text-light paragraphCourse ps-3 small d-flex gap-2">
+              <span><i class="fa fa-briefcase text-primary" aria-hidden="true"></i></span>
+              Cultivate skills highly sought by companies.
+            </p>
+
+            <p class="text-light paragraphCourse ps-3 small d-flex gap-2">
+              <span><i class="fa fa-graduation-cap text-primary" aria-hidden="true"></i></span>
+              Prepare for advanced graduate-level programs. 
+            </p>
+
+            <p class="text-light small paragraphCourse pt-3">
+              This program qualifies you for over 100 hours of project management education, which helps prepare you for Project Management Institute Certifications like the globally-recognized Certified Associate in Project Management (CAPM)®.
+            </p>
+
+            <div class="d-flex gap-4">
+              <p class="text-light small d-flex gap-2"><span><i class="fa fa-calendar-check-o text-primary" aria-hidden="true"></i></span>Flexible Deadlines</p>
+              <p class="text-light small d-flex gap-2"><span><i class="fa fa-rss text-primary" aria-hidden="true"></i></span>100% Online</p>
+            </div>
+
+
+            <!-- Flex system is apply in this section.. -->
+            <div class="mt-1 pt-4 d-flex flex-row align-items-center gap-4 ">
+
+              <!-- division for learn more button -->
+              <div>
+                <button class="LearnMoreBtn text-light" onclick="myBack()">
+                  <span>
+                    <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                  </span>
+                  Back
+                </button>
+              </div>
+
+              <!-- division for learn more button -->
+              <div>
+                <button class="LearnMoreBtn text-light">
+                  Enroll Now
+                  <span>
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- This is the start of 2nd row-->
       <section class="container pt-5 mt-4">
         <div class="row">
-          <!-- First Column for 2nd row : Photo -->
+
+          <!-- First column/2nd row: the course section.. -->
           <div class="col-xl-6 col-12 img_main">
             <img
               src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
               alt="Security Architecture"
-              class="w-100 rounded-3 img_course"
-            />
+              class="w-100 rounded-3 img_course"/>
+
+            <!-- Video overlay when hover -->
             <div class="info_overlay">
-             
               <video src="./Videos/Video4.mp4" controls class="w-100 h-100"></video>
-           
           </div>
           </div>
 
-          <!-- Second Column for 2nd row row : Description -->
+          <!-- 2nd column/2nd row: the course section.. -->
           <div class="col-xl-6 col-12 mt-xxl-3 mt-xl-0 mt-4 pt-2">
-            <!-- flex -->
+
+             <!-- Flex system is apply in this section.. -->
             <div class="d-flex flex-row justify-content-between">
               <p class="text-primary fw-semibold">STARTUP</p>
               <span class="badge">
                 <span>
                   <i class="fa fa-star text-warning" aria-hidden="true"></i>
-                </span>
-                4.9</span
-              >
+                </span>4.9
+              </span>
             </div>
+
+      
             <p class="fs-2 text-light fw-semibold">Security Architecture</p>
             <p class="mt-xxl-3 pt-xxl-3 text-light paragraphCourse">
               Security architecture forms the foundation of a good cyber
@@ -150,21 +281,25 @@
               technologies used to protect your business from external threats.
             </p>
 
-            <!-- flex system been used -->
+             <!-- Flex system is apply in this section.. -->
             <div class="d-flex flex-row gap-5 mt-xxl-5 mt-xl-0 mt-4 pt-2">
-              <!-- flex system been used -->
+
+               <!-- Flex system is apply in this section.. -->
               <div class="d-flex flex-row gap-2 align-content-center">
                 <i class="fa fa-clock-o text-primary" aria-hidden="true"></i>
                 <p class="text-light">12 weeks</p>
               </div>
+
               <div class="d-flex flex-row gap-2 align-content-center">
                 <i class="fa fa-line-chart text-primary" aria-hidden="true"></i>
                 <p class="text-light">Progress</p>
               </div>
+
             </div>
 
-            <!-- flex system been used -->
+             <!-- Flex system is apply in this section.. -->
             <div class="mt-1 d-flex flex-row align-items-center gap-4">
+
               <div>
                 <button class="LearnMoreBtn text-light">
                   Learn More
@@ -173,11 +308,13 @@
                   </span>
                 </button>
               </div>
+
               <div>
                 <button class="heartIcon">
                   <i class="fa fa-heart-o fs-5" aria-hidden="true"></i>
                 </button>
               </div>
+
             </div>
           </div>
         </div>
@@ -186,32 +323,35 @@
       <!-- Start of Course 3rd ROW -->
       <section class="container pt-5 mt-4">
         <div class="row">
+
           <!-- First Column for 3rd row : Photo -->
           <div class="col-xl-6 col-12 img_main">
             <img
               src="https://images.unsplash.com/photo-1629904853716-f0bc54eea481?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
               alt="Security Architecture"
-              class="w-100 rounded-3 img_course"
-            />
+              class="w-100 rounded-3 img_course"/>
+              
+            <!-- Video overlay when hover -->
             <div class="info_overlay">
-             
               <video src="./Videos/Video5.mp4" controls class="w-100 h-100"></video>
-           
-          </div>
+            </div>
+
           </div>
 
           <!-- Second Column for 3rd row row : Description -->
           <div class="col-xl-6 col-12 mt-xxl-3 mt-xl-0 mt-4 pt-2">
-            <!-- flex -->
+
+             <!-- Flex system is apply in this section.. -->
             <div class="d-flex flex-row justify-content-between">
               <p class="text-primary fw-semibold">STARTUP</p>
               <span class="badge">
                 <span>
                   <i class="fa fa-star text-warning" aria-hidden="true"></i>
-                </span>
-                4.9</span
-              >
+                </span>4.9
+              </span>
             </div>
+
+            <!-- description started -->
             <p class="fs-2 text-light fw-semibold">
               Security Policies Amp Procedures
             </p>
@@ -223,20 +363,24 @@
               data.
             </p>
 
-            <!-- flex system been used -->
+             <!-- Flex system is apply in this section.. -->
             <div class="d-flex flex-row gap-5 mt-xxl-5 mt-xl-0 mt-4 pt-2">
-              <!-- flex system been used -->
+
+               <!-- Flex system is apply in this section.. -->
               <div class="d-flex flex-row gap-2 align-content-center">
                 <i class="fa fa-clock-o text-primary" aria-hidden="true"></i>
                 <p class="text-light">12 weeks</p>
               </div>
+
+               <!-- Flex system is apply in this section.. -->
               <div class="d-flex flex-row gap-2 align-content-center">
                 <i class="fa fa-line-chart text-primary" aria-hidden="true"></i>
                 <p class="text-light">Progress</p>
               </div>
+
             </div>
 
-            <!-- flex system been used -->
+             <!-- Flex system is apply in this section.. -->
             <div class="mt-1 d-flex flex-row align-items-center gap-4">
               <div>
                 <button class="LearnMoreBtn text-light">
@@ -246,11 +390,13 @@
                   </span>
                 </button>
               </div>
+
               <div>
                 <button class="heartIcon">
                   <i class="fa fa-heart-o fs-5" aria-hidden="true"></i>
                 </button>
               </div>
+
             </div>
           </div>
         </div>
@@ -264,27 +410,29 @@
             <img
               src="https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
               alt="Security Architecture"
-              class="w-100 rounded-3 img_course"
-            />
+              class="w-100 rounded-3 img_course"/>
+            
+            <!-- Video overlay when hover -->
             <div class="info_overlay">
-             
               <video src="./Videos/Video6.mp4" controls class="w-100 h-100"></video>
-           
-          </div>
+            </div>
+
           </div>
 
           <!-- Second Column for 3rd row row : Description -->
           <div class="col-xl-6 col-12 mt-xxl-3 mt-xl-0 mt-4 pt-2">
-            <!-- flex -->
+            
+            <!-- Flex system is apply in this section.. -->
             <div class="d-flex flex-row justify-content-between">
               <p class="text-primary fw-semibold">STARTUP</p>
               <span class="badge">
                 <span>
                   <i class="fa fa-star text-warning" aria-hidden="true"></i>
-                </span>
-                4.9</span
-              >
+                </span>4.9
+              </span>
             </div>
+
+            <!-- Description started  -->
             <p class="fs-2 text-light fw-semibold">Wireless Network</p>
             <p class="mt-xxl-3 pt-xxl-3 text-light paragraphCourse">
               Wireless networks are computer networks that are not connected by
@@ -294,21 +442,26 @@
               locations.
             </p>
 
-            <!-- flex system been used -->
+             <!-- Flex system is apply in this section.. -->
             <div class="d-flex flex-row gap-5 mt-xxl-5 mt-xl-0 mt-4 pt-2">
-              <!-- flex system been used -->
+
+               <!-- Flex system is apply in this section.. -->
               <div class="d-flex flex-row gap-2 align-content-center">
                 <i class="fa fa-clock-o text-primary" aria-hidden="true"></i>
                 <p class="text-light">12 weeks</p>
               </div>
+
+               <!-- Flex system is apply in this section.. -->
               <div class="d-flex flex-row gap-2 align-content-center">
                 <i class="fa fa-line-chart text-primary" aria-hidden="true"></i>
                 <p class="text-light">Progress</p>
               </div>
+
             </div>
 
-            <!-- flex system been used -->
+             <!-- Flex system is apply in this section.. -->
             <div class="mt-1 d-flex flex-row align-items-center gap-4">
+
               <div>
                 <button class="LearnMoreBtn text-light">
                   Learn More
@@ -317,20 +470,258 @@
                   </span>
                 </button>
               </div>
+
               <div>
                 <button class="heartIcon">
                   <i class="fa fa-heart-o fs-5" aria-hidden="true"></i>
                 </button>
               </div>
+
             </div>
+
           </div>
         </div>
       </section>
 
+      <!-- TODO: This area will pop up when the Load More Button was click!-->
+   
+      <section class="container pt-5 mt-4 moreCourse" id="more">
+        <!-- FIXME: 1st row -->
+          <div class="row">
+            <!-- First Column for 3rd row : Photo -->
+            <div class="col-xl-6 col-12 img_main">
+              <img
+                src="https://images.unsplash.com/photo-1624969862644-791f3dc98927?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="Security Architecture"
+                class="w-100 rounded-3 img_course"/>
+              
+              <!-- Video overlay when hover -->
+              <div class="info_overlay">
+                <video src="./Videos/Video6.mp4" controls class="w-100 h-100"></video>
+              </div>
+  
+            </div>
+  
+            <!-- Second Column for 3rd row row : Description -->
+            <div class="col-xl-6 col-12 mt-xxl-3 mt-xl-0 mt-4 pt-2">
+              
+              <!-- Flex system is apply in this section.. -->
+              <div class="d-flex flex-row justify-content-between">
+                <p class="text-primary fw-semibold">STARTUP</p>
+                <span class="badge">
+                  <span>
+                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                  </span>4.9
+                </span>
+              </div>
+  
+              <!-- Description started  -->
+              <p class="fs-2 text-light fw-semibold">IBM Cybersecurity Analyst</p>
+              <p class="mt-xxl-3 pt-xxl-3 text-light paragraphCourse">
+                A growing number of exciting, well-paying jobs in today’s security industry do not require a college degree. This Professional Certificate will give you the technical skills to become job-ready for a Cybersecurity Analyst role. 
+              </p>
+  
+               <!-- Flex system is apply in this section.. -->
+              <div class="d-flex flex-row gap-5 mt-xxl-5 mt-xl-0 mt-4 pt-2">
+  
+                 <!-- Flex system is apply in this section.. -->
+                <div class="d-flex flex-row gap-2 align-content-center">
+                  <i class="fa fa-clock-o text-primary" aria-hidden="true"></i>
+                  <p class="text-light">12 weeks</p>
+                </div>
+  
+                 <!-- Flex system is apply in this section.. -->
+                <div class="d-flex flex-row gap-2 align-content-center">
+                  <i class="fa fa-line-chart text-primary" aria-hidden="true"></i>
+                  <p class="text-light">Progress</p>
+                </div>
+  
+              </div>
+  
+               <!-- Flex system is apply in this section.. -->
+              <div class="mt-1 d-flex flex-row align-items-center gap-4">
+  
+                <div>
+                  <button class="LearnMoreBtn text-light">
+                    Learn More
+                    <span>
+                      <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+  
+                <div>
+                  <button class="heartIcon">
+                    <i class="fa fa-heart-o fs-5" aria-hidden="true"></i>
+                  </button>
+                </div>
+  
+              </div>
+  
+            </div>
+          </div>
+
+        <!-- FIXME: 2nd row -->
+          <div class="row pt-5 mt-4">
+            <!-- First Column for 3rd row : Photo -->
+            <div class="col-xl-6 col-12 img_main">
+              <img
+                src="https://images.unsplash.com/photo-1547190027-9156686aa2f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="Security Architecture"
+                class="w-100 rounded-3 img_course"/>
+              
+              <!-- Video overlay when hover -->
+              <div class="info_overlay">
+                <video src="./Videos/Video6.mp4" controls class="w-100 h-100"></video>
+              </div>
+  
+            </div>
+  
+            <!-- Second Column for 3rd row row : Description -->
+            <div class="col-xl-6 col-12 mt-xxl-3 mt-xl-0 mt-4 pt-2">
+              
+              <!-- Flex system is apply in this section.. -->
+              <div class="d-flex flex-row justify-content-between">
+                <p class="text-primary fw-semibold">STARTUP</p>
+                <span class="badge">
+                  <span>
+                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                  </span>4.9
+                </span>
+              </div>
+  
+              <!-- Description started  -->
+              <p class="fs-2 text-light fw-semibold">Data & Cybersecurity</p>
+              <p class="mt-xxl-3 pt-xxl-3 text-light paragraphCourse">
+                Como integrantes del mundo empresarial, los profesionales de la tecnología suelen ser el principal objetivo de un ciberataque, ya que tienen acceso a información confidencial, a cuentas o a los sistemas de una empresa.
+              </p>
+  
+               <!-- Flex system is apply in this section.. -->
+              <div class="d-flex flex-row gap-5 mt-xxl-5 mt-xl-0 mt-4 pt-2">
+  
+                 <!-- Flex system is apply in this section.. -->
+                <div class="d-flex flex-row gap-2 align-content-center">
+                  <i class="fa fa-clock-o text-primary" aria-hidden="true"></i>
+                  <p class="text-light">12 weeks</p>
+                </div>
+  
+                 <!-- Flex system is apply in this section.. -->
+                <div class="d-flex flex-row gap-2 align-content-center">
+                  <i class="fa fa-line-chart text-primary" aria-hidden="true"></i>
+                  <p class="text-light">Progress</p>
+                </div>
+  
+              </div>
+  
+               <!-- Flex system is apply in this section.. -->
+              <div class="mt-1 d-flex flex-row align-items-center gap-4">
+  
+                <div>
+                  <button class="LearnMoreBtn text-light">
+                    Learn More
+                    <span>
+                      <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+  
+                <div>
+                  <button class="heartIcon">
+                    <i class="fa fa-heart-o fs-5" aria-hidden="true"></i>
+                  </button>
+                </div>
+  
+              </div>
+  
+            </div>
+          </div>
+
+        <!-- FIXME: 3rd row -->
+          <div class="row pt-5 mt-4">
+            <!-- First Column for 3rd row : Photo -->
+            <div class="col-xl-6 col-12 img_main">
+              <img
+                src="https://images.unsplash.com/photo-1633265486064-086b219458ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="Security Architecture"
+                class="w-100 rounded-3 img_course"/>
+              
+              <!-- Video overlay when hover -->
+              <div class="info_overlay">
+                <video src="./Videos/Video6.mp4" controls class="w-100 h-100"></video>
+              </div>
+  
+            </div>
+  
+            <!-- Second Column for 3rd row row : Description -->
+            <div class="col-xl-6 col-12 mt-xxl-3 mt-xl-0 mt-4 pt-2">
+              
+              <!-- Flex system is apply in this section.. -->
+              <div class="d-flex flex-row justify-content-between">
+                <p class="text-primary fw-semibold">STARTUP</p>
+                <span class="badge">
+                  <span>
+                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                  </span>4.9
+                </span>
+              </div>
+  
+              <!-- Description started  -->
+              <p class="fs-2 text-light fw-semibold">Python for Cybersecurity</p>
+              <p class="mt-xxl-3 pt-xxl-3 text-light paragraphCourse">
+                Python is one of the most popular and widely-used programming languages in the world due to its high usability and large collection of libraries. This learning path provides an application-driven introduction to using Python for cybersecurity. 
+              </p>
+  
+               <!-- Flex system is apply in this section.. -->
+              <div class="d-flex flex-row gap-5 mt-xxl-5 mt-xl-0 mt-4 pt-2">
+  
+                 <!-- Flex system is apply in this section.. -->
+                <div class="d-flex flex-row gap-2 align-content-center">
+                  <i class="fa fa-clock-o text-primary" aria-hidden="true"></i>
+                  <p class="text-light">12 weeks</p>
+                </div>
+  
+                 <!-- Flex system is apply in this section.. -->
+                <div class="d-flex flex-row gap-2 align-content-center">
+                  <i class="fa fa-line-chart text-primary" aria-hidden="true"></i>
+                  <p class="text-light">Progress</p>
+                </div>
+  
+              </div>
+  
+               <!-- Flex system is apply in this section.. -->
+              <div class="mt-1 d-flex flex-row align-items-center gap-4">
+  
+                <div>
+                  <button class="LearnMoreBtn text-light">
+                    Learn More
+                    <span>
+                      <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+  
+                <div>
+                  <button class="heartIcon">
+                    <i class="fa fa-heart-o fs-5" aria-hidden="true"></i>
+                  </button>
+                </div>
+  
+              </div>
+  
+            </div>
+          </div>
+
+      </section>
+   
+
       <!-- Load More Button -->
       <div class="text-center mt-5">
-        <button class="loadMoreCourse text-light">Load More</button>
+        <p class="text-secondary small" id="noMore"></p>
+        <button class="loadMoreCourse text-light" onclick="myFunction()" id="myBtn" >Load More</button>
       </div>
+
+     
+      
       <!-- END OF COURSES -->
 
       <!-- START OF CAROUSEL   -->
@@ -717,17 +1108,16 @@
       </section>
 
 
- 
-
    
       <!-- background -->
     </div>
+    <script src="./CoursePage.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../Navbar/main.js"></script>
+      crossorigin="anonymous">
+    </script>
+   
   </body>
 </html>
