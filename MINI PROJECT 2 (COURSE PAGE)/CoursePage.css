@@ -12,6 +12,10 @@
     background-color: #2D4059;
   }
 
+  .fontColor {
+    color: #E1B12C;
+  }
+
   .paragraphCourse{
     text-align: justify;
   }
@@ -34,11 +38,13 @@
     box-shadow: inset 0 0 0 0 #008CF0;
     transition: ease-out 1s;
     outline: none;
+    color: whitesmoke;
   }
 
   .LearnMoreBtn:hover {
-    box-shadow: inset 300px 0 0 0 #008CF0;
+    box-shadow: inset 300px 0 0 0 #E1B12C;
     border: 1px solid #101241;
+    color: black;
   }
 
 
@@ -50,6 +56,95 @@
       letter-spacing: 2px;
     }
   }
+
+  #learnMoreContent_1 {
+    display: none;
+    animation: myLearnMore 1s ease 0s 1 normal forwards;
+    
+  }
+
+  @keyframes myLearnMore {
+    0% {
+      transform: scale(0);
+      transform-origin: 50% 100%;
+    }
+  
+    100% {
+      transform: scale(1);
+      transform-origin: 50% 100%;
+    }
+  }
+
+  #learnMoreContent_2 {
+    display: none;
+    animation: myLearnMore2 1s ease 0s 1 normal forwards;
+    
+  }
+
+  @keyframes myLearnMore2 {
+    0% {
+      transform: scale(0);
+      transform-origin: 50% 100%;
+    }
+  
+    100% {
+      transform: scale(1);
+      transform-origin: 50% 100%;
+    }
+  }
+
+  #learnMoreContent_3 {
+    display: none;
+    animation: myLearnMore3 1s ease 0s 1 normal forwards;
+  }
+
+  @keyframes myLearnMore3 {
+    0% {
+      transform: scale(0);
+      transform-origin: 50% 100%;
+    }
+  
+    100% {
+      transform: scale(1);
+      transform-origin: 50% 100%;
+    }
+  }
+
+  #learnMoreContent_4 {
+    display: none;
+    animation: myLearnMore4 1s ease 0s 1 normal forwards;
+  }
+
+  @keyframes myLearnMore4 {
+    0% {
+      transform: scale(0);
+      transform-origin: 50% 100%;
+    }
+  
+    100% {
+      transform: scale(1);
+      transform-origin: 50% 100%;
+    }
+  }
+
+  #more {
+    display: none;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+  }
+
+  @keyframes myAnim {
+    0% {
+      opacity: 0;
+      transform: translateY(-250px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+ 
 
   .img_main{
     position: relative;
@@ -93,7 +188,7 @@
   }
 
   .loadMoreCourse{
-    background-color: #008CF0;
+    background-color: #E1B12C;
     height: 45px;
     width: 120px;
     border-radius: 10px ;
@@ -119,28 +214,31 @@
   }
 
   .iconPrice {
-    color: #25CCF7;
+    color: #778beb;
   }
 
   .namePrice {
-    color: #25CCF7;
+    color: #778beb;
+    font-weight: bold;
   }
   
+
+  .columnPricing {
+    background-color: #101241;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #008CF0;
+    transition: ease-out 1s;
+    outline: none;
+  }
 
   .columnPricing:hover {
     transform: scale(1.2);
     z-index: 1;
-    transition: 2s;
-    background-color: #008CF0;
+    transition: 2s; 
+    box-shadow: inset 0 500px 0 0 #E1B12C;
     
   }
 
-  #more {
-    display: none;
-  }
-
-  #learnMoreContent_1 {
-    display: none;
-  }
+  
 
 
