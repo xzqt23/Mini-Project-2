@@ -3,9 +3,25 @@
     padding: 0;
     margin: 0;
   }
+
   .backGround {
     background-color: #101241;
   }
+
+  /* TODO: Nav Bar CSS _ Kent */
+  .navbar-brand img {
+    width: 4em;
+  }
+
+
+  .navbar {
+    background: #191C5C;
+    /* background: rgba(0, 0, 0, 0.4); */
+    backdrop-filter: blur(2.35589px);
+  }
+  
+
+  /* TODO: Nav Bar CSS _ Kent */
 
   .badge {
     height: fit-content;
@@ -237,6 +253,10 @@
     transition: 2s; 
     box-shadow: inset 0 500px 0 0 #E1B12C;
     
+  }
+
+  .footerCourse {
+    background-color:#191C5C ;
   }
 
   
