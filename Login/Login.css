@@ -1,0 +1,29 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.backGround {
+    background-color: #101241;
+  }
+
+.navbar-brand img {
+    width: 4em;
+  }
+
+
+.navbar {
+    background: #191C5C;
+    /* background: rgba(0, 0, 0, 0.4); */
+    backdrop-filter: blur(2.35589px);
+}
+
+.bodyContent {
+    height: 100vh;
+}
+
+.footerCourse {
+    background-color:#191C5C ;
+  }
