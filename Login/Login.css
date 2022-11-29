@@ -20,10 +20,89 @@
     backdrop-filter: blur(2.35589px);
 }
 
+.textLogin {
+  color: #E1B12C;
+}
+
+.textContentLogin {
+  text-align: justify;
+}
+
+.signUpForm {
+  display: none;
+  animation: myAnim 2s cubic-bezier(0.12, 0, 0.39, 0) 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateY(-65px);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateY(-28px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateY(-8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+}
+
+.forms {
+  filter: drop-shadow(10px 0px 4px rgba(0, 0, 0, 0.25));
+}
+
+.logSignBtn {
+  background-color: #E1B12C;
+  box-shadow: inset 0 0 0 0 #eb3b5a;
+  transition: ease-out 1s;
+  outline: none;
+  filter: drop-shadow(4px 0px 4px rgba(0, 0, 0, 0.25));
+  
+}
+
+
+
+.logSignBtn:hover {
+  box-shadow: inset 700px 0 0 0 #e84118;
+  cursor: pointer;
+  color: white;
+  border: 1px solid #58B19F;
+}
+
 .bodyContent {
     height: 100vh;
 }
 
 .footerCourse {
     background-color:#191C5C ;
-  }
+}

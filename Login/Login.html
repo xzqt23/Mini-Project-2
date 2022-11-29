@@ -33,7 +33,10 @@
 
       <!-- TODO: NavBar -->
       <nav class="navbar navbar-expand-xl navbar-dark sticky-top p-0">
-        <div class="container-fluid d-flex justify-content-between pt-1 pb-2">
+        <div class="container-fluid d-flex justify-content-center">
+          <img src="./Images/logo.png" alt="" class="p-2" style="width: 100px;">
+        </div>
+        <!-- <div class="container-fluid d-flex justify-content-between pt-1 pb-2">
           <button class="btn text-white d-xl-none" type="submit">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
@@ -80,29 +83,95 @@
                 <a class="nav-link text-light" href="#">Account</a>
               </li>
             </ul>
-
-            <!-- <div class="d-flex">
-            <button class="btn text-white d-none d-sm-none d-md-none d-xl-flex" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-      </div> -->
           </div>
-        </div>
+        </div> -->
       </nav>
 
+      <!-- TODO: This is the Log-in section of our website! -->
       <section class="container mt-5">
-        <div class="row">
-          <div class="col-6 text-light">
-            <p class="fs-3">Welcome! <span class="" id="changingText"> </span> </p>
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-6 col-11 order-lg-0 order-1 text-light">
+            <!-- This area below will be display none when the screen size is below 992 px -->
+            <div class="d-flex flex-column align-items-lg-baseline align-items-center d-lg-block d-none">
+              <p class="fs-1 textLogin mb-0 fw-semibold">Welcome! <span class="text-light" > </span> </p>
+              <p ><span style="color: #101241;">.</span> <span class="fs-4 text-light" id="changingText"></span> </p>
+            </div>
+            
+            
 
-            <div class="mt-5">
-              <p>As a member, you get immediate access to : </p>
-              <p>The largest and best collection of online learning resources—guaranteed.</p>
-              <p>Hundreds of expert tutors available 24/7. Get answers and explanations in as little as 15 minutes.</p>
+            <div class="mt-5 pt-lg-3">
+              <!-- 1st set -->
+              <p class="fs-5 fw-semibold text-warning textLogin d-sm-block d-none">As a member, you get immediate access to : </p>
+              <!-- This will show when the screen size is below 992px -->
+              <p class="small fw-semibold text-warning textLogin d-sm-none d-block">As a member, you get immediate access to : </p>
+              
+              <!-- 2nd set -->
+              <p class="d-flex gap-2 textContentLogin mt-4 d-sm-block d-none">
+                <span><i class="fa fa-check-square-o text-warning" aria-hidden="true"></i></span> 
+                The largest and best collection of online learning resources—guaranteed.
+              </p>
+              <!-- This will show when the screen size is below 992px -->
+              <p class="d-flex gap-2 textContentLogin mt-4 d-sm-none d-block small">
+                <span><i class="fa fa-check-square-o text-warning" aria-hidden="true"></i></span> 
+                The largest and best collection of online learning resources—guaranteed.
+              </p>
+
+              <!-- 3rd set -->
+              <p class="d-flex gap-2 textContentLogin mt-4 d-sm-block d-none">
+                <span><i class="fa fa-check-square-o text-warning" aria-hidden="true"></i></span> 
+                Hundreds of expert tutors available 24/7. Get answers and explanations in as little as 15 minutes.
+              </p>
+              <!-- This will show when the screen size is below 992px -->
+              <p class="d-flex gap-2 textContentLogin mt-4 d-sm-none d-block small">
+                <span><i class="fa fa-check-square-o text-warning" aria-hidden="true"></i></span> 
+                Hundreds of expert tutors available 24/7. Get answers and explanations in as little as 15 minutes.
+              </p>
+
+              <!-- 4th set -->
+              <p class="d-flex gap-2 textContentLogin mt-4 d-sm-block d-none">
+                <span><i class="fa fa-check-square-o text-warning" aria-hidden="true"></i></span> 
+                Learn the defensive and offensive cybersecurity skills you need to fight cybercrime and transform your career in 13 to 26 weeks.
+              </p>
+              <!-- This will show when the screen size is below 992px -->
+              <p class="d-flex gap-2 textContentLogin mt-4 d-sm-none d-block small">
+                <span><i class="fa fa-check-square-o text-warning" aria-hidden="true"></i></span> 
+                Learn the defensive and offensive cybersecurity skills you need to fight cybercrime and transform your career in 13 to 26 weeks.
+              </p>
+
+              <!--5th set  -->
+              <p class="d-flex gap-2 textContentLogin mt-4 d-sm-block d-none">
+                <span><i class="fa fa-check-square-o text-warning" aria-hidden="true"></i></span> 
+                Helps in planning and implementing security strategies to reduce risk and enhance the protection of information, assets and systems.
+              </p>
+              <!-- This will show when the screen size is below 992px -->
+              <p class="d-flex gap-2 textContentLogin mt-4 d-sm-none d-block small">
+                <span><i class="fa fa-check-square-o text-warning" aria-hidden="true"></i></span> 
+                Helps in planning and implementing security strategies to reduce risk and enhance the protection of information, assets and systems.
+              </p>
+
+              <!-- 6th set -->
+              <p class="d-flex gap-2 textContentLogin mt-4 d-sm-block d-none">
+                <span><i class="fa fa-check-square-o text-warning" aria-hidden="true"></i></span> 
+                Monitor systems for malicious content. Identify network breaches. Install regular software updates, firewalls, and antivirus protection. Strengthen areas where attacks may have occurred.
+              </p>
+              <!-- This will show when the screen size is below 992px -->
+              <p class="d-flex gap-2 textContentLogin mt-4 d-sm-none d-block small">
+                <span><i class="fa fa-check-square-o text-warning" aria-hidden="true"></i></span> 
+                Monitor systems for malicious content. Identify network breaches. Install regular software updates, firewalls, and antivirus protection. Strengthen areas where attacks may have occurred.
+              </p>
             </div>
             
           </div>
 
           <!-- FIXME: Second column of our Login -->
-          <div class="col-6 text-light">
+          <!-- TODO:  -->
+          <div class="forms col-lg-6 order-lg-1 col-10 text-light border border-1 p-4 rounded rounded-4" id="loginForm">
+            <!-- This area below will be display none whe the screen size is above 991 px -->
+            <div class="d-flex flex-column align-items-lg-baseline align-items-center d-lg-none d-block">
+              <p class="fs-1 textLogin mb-0 fw-semibold">Welcome! <span class="text-light" > </span> </p>
+              <p ><span style="color: #101241;">.</span> <span class="fs-4 text-light" id="changingText"></span> </p>
+            </div>
+
             <p class="fs-1 fw-semibold mb-0">Login</p>
             <p class="fs-5 pb-3">Welcome! Please enter your credentials</p>
 
@@ -116,8 +185,8 @@
               </div>
 
               <div class="d-flex flex-column pt-5">
-                <button type="button" class="btn btn-warning fw-semibold fs-5">Log in</button>
-                <button type="button" class="btn btn-warning mt-4 fw-semibold fs-5">Sign up</button>
+                <button type="button" class="btn fw-semibold fs-5 logSignBtn"><span class="logSignText">Log in</span></button>
+                <button type="button" class="btn btn-warning mt-4 fw-semibold fs-5 logSignBtn" onclick="mySignUp()">Sign up</button>
               </div>
 
               <div class="pt-4 d-flex flex-column align-items-center">
@@ -132,18 +201,66 @@
               </div>
 
               <div class="mt-5">
-                <p>Don't have an account? <a href="">Sign up for free</a></p>
+                <p class="d-sm-block d-none">Don't have an account? <a href="">Sign up for free</a></p>
+                <p class="d-sm-none d-block small">Don't have an account? <a href="">Sign up for free</a></p>
               </div>
              
             </form>
 
           </div>
+
+          <!-- TODO: FIXME: This is the signup form hiding!! -->
+
+          <div class="col-lg-6 order-lg-1 col-10 text-light signUpForm border border-1 p-4 rounded rounded-4" id="signUpForm">
+            <!-- This area below will be display none whe the screen size is above 991 px -->
+            <div class="d-flex flex-column align-items-lg-baseline align-items-center d-lg-none d-block">
+              <p class="fs-1 textLogin mb-0 fw-semibold">Welcome! <span class="text-light" > </span> </p>
+              <p ><span style="color: #101241;">.</span> <span class="fs-4 text-light" id="changingText"></span> </p>
+            </div>
+
+            <p class="fs-1 fw-semibold mb-0">Create an account</p>
+            <p class="fs-5 pb-3">Let's get started with today.</p>
+
+            <form action="submit">
+              <input type="text" class="form-control" placeholder="Username" required> <br>
+              <input type="email" class="form-control" placeholder="Email" required> <br>
+              <input type="password" class="form-control" placeholder="Password" required>
+
+              <!-- <div class="pt-3">
+                <input class="form-check-input" type="radio" name="radioInline" id="inlineRadioDefault">
+                <label class="form-check-label" for="inlineRadioDefault">Remember for 30 days</label>
+              </div> -->
+
+              <div class="d-flex flex-column pt-5">
+                <!-- <button type="button" class="btn btn-warning fw-semibold fs-5">Log in</button> -->
+                <button type="button" class="btn btn-warning mt-4 fw-semibold fs-5 logSignBtn">Create account</button>
+              </div>
+
+              <div class="pt-4 d-flex flex-column align-items-center">
+                <p>or</p>
+              </div>
+
+              <div class="d-flex flex-column pt-2">
+                <button type="button" class="btn text-light border w-semibold fs-5">
+                  <span><img src="./Images/Frame.png" alt=""></span> 
+                  <span>Log in with Google</span>
+                </button>
+              </div>
+
+              <div class="mt-5">
+                <p class="d-sm-block d-none">Already have an account? <a href="">Log in</a></p>
+                <p class="d-sm-none d-block small">Already have an account? <a href="" onclick="myLogin()">Log in</a></p>
+              </div>
+             
+            </form>
+
+          </div>
+
+          <!-- TODO: the div below is the closing tag of the row!!!! -->
         </div>
       </section>
 
-      <!-- FIXME: Main Body -->
-        <section class="bodyContent"></section>
-
+   
 
         <!-- TODO: Footer -->
       <section class="container-fluid mt-5 footerCourse d-xl-block d-none">
@@ -185,9 +302,7 @@
             <p class="text-light fw-bold">Working with the partnership with</p>
             <img src="./Images/partnership.png" alt="" style="width: 200px;">
           </div>
-          
-         
-          
+
       </section>
 
       <!-- TODO: Footer -->

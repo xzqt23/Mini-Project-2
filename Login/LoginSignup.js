@@ -1,8 +1,8 @@
 //you can change the text, but you need to keep same format [yourtext, color];
 let yourtext = [
     ["Learn from Zero to Hero?", "#ffd166"],
-    ["Enroll now!", "#7DE2D1"],
-    ["ND KAK Provides you CyberSecurity Course you want!", "#DE3C4B"]
+    ["Enroll now! Pay later!", "#7DE2D1"],
+    ["Be a Cyber Defender!", "#DE3C4B"]
   ];
   
   let x = 0;
@@ -38,4 +38,16 @@ let yourtext = [
       }
     }
   }, wait);
+
+
+  // These area below contain the JavaScript code for Login and Signup switching...
+
+  function mySignUp() {
+    document.getElementById("loginForm").style.display = "none";
+    document.getElementById("signUpForm").style.display = "block";
+  }
   
+  function myLogin() {
+    document.getElementById("loginForm").style.display = "block";
+    document.getElementById("signUpForm").style.display = "none";
+  }
