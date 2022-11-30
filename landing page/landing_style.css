@@ -2,6 +2,17 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.navbar-brand img {
+  width: 4em;
+}
+
+
+.navbar {
+  /* background: #191C5C; */
+  /* background: rgba(0, 0, 0, 0.4); */
+  backdrop-filter: blur(2.35589px);
+}
+
 body{
     overflow-x: hidden;
     background: #080623;
@@ -234,4 +245,8 @@ body{
     left: 2em;
     top: 101em;
   }
+}
+
+.footerCourse {
+  background-color:#191C5C ;
 }
