@@ -1,6 +1,14 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
 body{
     overflow-x: hidden;
     background: #080623;
+}
+
+.firstSectionBackgroundCards{
+  background-color: rgba(43, 41, 67, 70%);
 }
 
 .navbar{
@@ -16,6 +24,14 @@ body{
     top: 77%;
     width: 100%;
 }
+
+.textSection3 {
+  text-align: justify;
+}
+
+
+
+
 
   .banner {
     height: 70px;
