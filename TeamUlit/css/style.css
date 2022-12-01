@@ -32,10 +32,13 @@
   
     /* teampage */
   
-    h1{
+    div h1{
       color: #fff;
-      /* margin-left: 220px; */
+      margin-left: 120px;
       font-size: 25px;
+  }
+  div strong{
+    margin-left: 120px;
   }
   
   strong{
