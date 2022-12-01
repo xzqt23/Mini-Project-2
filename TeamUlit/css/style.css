@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+
   .backGround {
       background-color: #101241;
       width: 100%;
@@ -15,7 +18,9 @@
       margin-left: 45px;
     }
   
-  
+  .nav-link{
+    font-family: 'Poppins', sans-serif;
+  }
   .navbar {
       background: #191C5C;
       backdrop-filter: blur(2.35589px);
@@ -29,14 +34,14 @@
   
     h1{
       color: #fff;
-      margin-left: 220px;
+      /* margin-left: 220px; */
       font-size: 25px;
   }
   
   strong{
       padding-top: 35px;
       color: #fff;
-      margin-left: 220px;
+      /* margin-left: 220px; */
       font-size: 40px;
     
   }
@@ -94,12 +99,18 @@
       cursor: pointer;
       font-family: cursive;
       border: none;
+   
     }  
+
+    .card img{
+      gap: 100px;
+    }
     
      .card:hover { 
       color: #E1B12C;
        transition: color .5s; 
        transform: scale(1.2);
+       transition:0.5s ease-in-out
     }
     .card img:hover{
         box-shadow: #fff;
