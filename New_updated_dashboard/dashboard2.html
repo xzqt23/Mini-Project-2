@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <!-- Bootstrap -->
-       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
        <!-- Fonts -->
        <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,10 +18,67 @@
        <link rel="stylesheet"
        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
        <link rel="stylesheet" href="./dashboard2Style.css">
+       <link rel="stylesheet" href="./footer.css">
+       <link rel="stylesheet" href="./navbar.css">
+       <!-- <link rel="stylesheet" href="./chatboot.css"> -->
+       <link rel="stylesheet" type="text/css" href="./css/jquery.convform.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <!-- <link rel="stylesheet" type="text/css" href="./css/bootstrap.css"> -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
        
     <title>Document</title>
 </head>
 <body>
+  <header class="header">
+    <div class="container">
+       <div class="header-main">
+          <div class="logo">
+             <a href="#"><img src="./Assets/images/logo.png" alt=""></a>
+          </div>
+          <div class="open-nav-menu">
+             <span></span>
+          </div>
+          <div class="menu-overlay">
+          </div>
+          <!-- navigation menu start -->
+          <nav class="nav-menu">
+            <div class="close-nav-menu" style="background-color: black;">
+               <img src="./Assets/images/logo.png" alt="close">
+            </div>
+            <ul class="menu">
+               <li class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu">Home</a>
+               </li>     
+               <li class="menu-item">
+                  <a href="#">Courses</a>
+               </li>
+               <li class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu">About</a>
+                  <ul class="sub-menu">
+                      <li class="menu-item"><a href="#">About NDKAK</a></li>
+                      <li class="menu-item"><a href="#">Career</a></li>
+                      <li class="menu-item"><a href="#">FAQ</a></li>
+                  </ul>
+               </li>
+               <li class="menu-item">
+                <a href="#">Blog</a>
+             </li>
+             <li class="menu-item menu-item-has-children">
+               <a href="#" data-toggle="sub-menu">Contact us</a>
+               <ul class="sub-menu">
+                   <li class="menu-item"><a href="#">Our Team</a></li>
+                   <li class="menu-item"><a href="#">Recommedations</a></li>
+               </ul>
+            </li>
+               <li class="menu-item">
+                  <a href="#">Account</a>
+               </li>
+            </ul>
+          </nav>
+          <!-- navigation menu end -->
+       </div>
+    </div>
+ </header>
     <nav class="sidebar close">
         <header>
             <div class="image-text">
@@ -143,7 +198,9 @@
                 </div>
             </article> -->
             <article id="functionalCard">
+              
                 <section class="main-section">
+                  
                     <div class="course-header">
                       <i class="mode-switch fas fa-moon"></i>
                       <h1>Your Courses</h1>
@@ -216,12 +273,12 @@
 
                   </section>
                   <section class="html-course course-section">
-                    <a class="back"><i class="fas fa-chevron-left"></i> Back to Courses</a>
+                    <div class="backbtn"><a class="back"><i class="fas fa-chevron-left"></i> Back to Courses</a></div>
                     <div class="courses">
                       <div class="course html checked" tabindex="1">
                         <div class="course-info">
                           <span>Lesson</span>
-                          <h5>Intro to Semantic HTML</h5>
+                          <h5>Intro to Cyber Security</h5>
                         </div>
                         <div class="course-more">
                           <div class="details">
@@ -378,13 +435,13 @@
                 <h1>Knowledge Base</h1>
             </div>
             <article class="docu">
-                <div class="docuFile"><h5>Module</h5> <img src="../folder-open.png" alt="">   <img src="../sidebar/sidebar/chevron-right.png" alt="">
+                <div class="docuFile"><img src="../sidebar/UI icon/folder-open.png" alt=""> <h5><a href="#">Module</a></h5>   <img src="../sidebar/sidebar/chevron-right.png" alt="">
                 </div>
-                <div class="docuFile"><h5>Assignment</h5><img src="../sidebar/UI icon/vuesax/bulk/folder-open.png" alt=""> <img src="../sidebar/sidebar/chevron-right.png" alt="">   
+                <div class="docuFile"><img src="../sidebar/UI icon/folder-open.png" alt=""><h5><a href="#">Assignment</a> </h5>  <img src="../sidebar/sidebar/chevron-right.png" alt="">
                 </div>
-                <div class="docuFile"><h5>PDF File</h5> <img src="../folder-open.png" alt=""> <img src="../sidebar/sidebar/chevron-right.png" alt="">
+                <div class="docuFile"><img src="../sidebar/UI icon/folder-open.png" alt=""><h5><a href="#"> PDF File</a></h5><img src="../sidebar/sidebar/chevron-right.png" alt="">
                 </div>
-                <div class="docuFile"><h5>PPT File</h5> <img src="../folder-open.png" alt=""> <img src="../sidebar/sidebar/chevron-right.png" alt="">
+                <div class="docuFile"><img src="../sidebar/UI icon/folder-open.png" alt=""><h5><a href="#">PPT File</a></h5>  <img src="../sidebar/sidebar/chevron-right.png" alt="">
                 </div>
     
             </article>
@@ -393,56 +450,150 @@
         <menu id="navbarCard">
             <ul id="navbarMain">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">In Progress</a></li>
-            <li><a href="#">Complete</a></li>
+            <li ><a   onclick="myProgress()" class="Progress"> In Progress</a> </li>
+            <li><a  onclick="myComplete()" class="Progress">Complete</a></li>
             </ul>
-            <div class="main-courseCard">
-               
-                <div class="courseCard">
-                    <div class="image-container">
-                        <img src="/sidebar/UI Progress img/Cyber-Security-Fundamentals.jpg" alt="">
-                    </div>
-                    <div class="titleCardContent">
-                        <h3>Course | <span>NDKAK</span></h3>
-                        <h4>Cybersecurity Fundamentals</h4>
-                        <p>Need more time to complete this course? Push your estimated end date to 12/29/2022 PST and achieve your goal.
-                        </p>
-                    </div>
-                </div>
             
-                <div class="courseCard">
-                    <div class="image-container">
-                        <img src="../Mini-Project-2/MINI PROJECT 2 (COURSE PAGE)/Images/img1.png" alt="">
+          <div class="main-courseCard">
+               <div id="progressList">
+                <div class="courseCard" id="play">
+                  <div class="image-container">
+                      <img src="../sidebar/UI Progress img/coursera1.jpg" alt="">
+                  </div>
+                  <div class="titleCardContent">
+                      <h3>Course | <span>NDKAK</span></h3>
+                      <h4>Cybersecurity Fundamentals</h4>
+                      <p>Need more time to complete this course? Push your estimated end date to 12/29/2022 PST and achieve your goal.
+                      </p>
+                  </div>
+                  <div class="titleCardBtn">
+                    <div class="mainButtonOption">
+                      <button id="optionBtn1">
+                        <h1>Go to course</h1>
+                        <img src="../sidebar/sidebar/chevron-right.png" alt="">
+                    </button>
+                      <div id="optionBtn2"> <a href="#">Set deadlines</a> </div>
                     </div>
-                    <div class="titleCardContent">
-                        <h3>Course | <span>NDKAK</span></h3>
-                        <h4>Cybersecurity Fundamentals</h4>
-                        <p>Need more time to complete this course? Push your estimated end date to 12/29/2022 PST and achieve your goal.
-                        </p>
+                   <i><img src="../sidebar/sidebar/dots-vertical.png" alt=""></i>
                     </div>
+                   
+              </div>
+          
+              <div class="courseCard" id="reset">
+                  <div class="image-container">
+                      <img src="../New_updated_dashboard/Assest/image_course_banner/photo-of-people-doing-handshakes-3183197.png" alt="">
+                  </div>
+                  <div class="titleCardContent">
+                      <h3>Course | <span>NDKAK</span></h3>
+                      <h4>Cybersecurity Fundamentals</h4>
+                      <p>Need more time to complete this course? Push your estimated end date to 12/29/2022 PST and achieve your goal.
+                      </p>
+                  </div>
+                  <div class="titleCardBtn">
+                    <div class="mainButtonOption">
+                      <button id="optionBtn1">
+                        <h1>Go to course</h1>
+                        <img src="../sidebar/sidebar/chevron-right.png" alt="">
+                    </button>
+                      <div id="optionBtn2"> <a href="#">Set deadlines</a> </div>
+                    </div>
+                   <i><img src="../sidebar/sidebar/dots-vertical.png" alt=""></i>
+                    </div>
+              </div>
+              <div class="courseCard">
+                  <div class="image-container">
+                      <img src="../New_updated_dashboard/Assest/image_course_banner/two-women-in-front-of-dry-erase-board-1181533.png" alt="">
+                  </div>
+                  <div class="titleCardContent">
+                      <h3>Course | <span>NDKAK</span></h3>
+                      <h4>Cybersecurity Fundamentals</h4>
+                      <p>Need more time to complete this course? Push your estimated end date to 12/29/2022 PST and achieve your goal.
+                      </p>
+                  </div>
+                  <div class="titleCardBtn">
+                    <div class="mainButtonOption">
+                      <button id="optionBtn1">
+                        <h1>Go to course</h1>
+                        <img src="../sidebar/sidebar/chevron-right.png" alt="">
+                    </button>
+                      <div id="optionBtn2"> <a href="#">Set deadlines</a> </div>
+                    </div>
+                   <i><img src="../sidebar/sidebar/dots-vertical.png" alt=""></i>
+                    </div>
+              </div>
+              <div class="courseCard">
+                  <div class="image-container">
+                      <img src="../sidebar/UI Progress img/Cyber-Security-Fundamentals.jpg" alt="">
+                  </div>
+                  <div class="titleCardContent">
+                      <h3>Course | <span>NDKAK</span></h3>
+                      <h4>Cybersecurity Fundamentals</h4>
+                      <p>Need more time to complete this course? Push your estimated end date to 12/29/2022 PST and achieve your goal.
+                      </p>
+                  </div>
+                  <div class="titleCardBtn">
+                    <div class="mainButtonOption">
+                      <button id="optionBtn1">
+                        <h1>Go to course</h1>
+                        <img src="../sidebar/sidebar/chevron-right.png" alt="">
+                    </button>
+                      <div id="optionBtn2"> <a href="#">Set deadlines</a> </div>
+                    </div>
+                   <i><img src="../sidebar/sidebar/dots-vertical.png" alt=""></i>
+                    </div>
+              </div>
+              <div class="courseCard">
+                  <div class="image-container">
+                      <img src="../sidebar/UI Progress img/coursera1.jpg" alt="">
+                  </div>
+                  <div class="titleCardContent">
+                      <h3>Course | <span>NDKAK</span></h3>
+                      <h4>Cybersecurity Fundamentals</h4>
+                      <p>Need more time to complete this course? Push your estimated end date to 12/29/2022 PST and achieve your goal.
+                      </p>
+                  </div>
+                  <div class="titleCardBtn">
+                    <div class="mainButtonOption">
+                      <button id="optionBtn1">
+                        <h1>Go to course</h1>
+                        
+                    </button>
+                      <div id="optionBtn2"> <a href="#">Set deadlines</a> </div>
+                    </div>
+                   <i><img src="../sidebar/sidebar/dots-vertical.png" alt=""></i>
+                    </div>
+               </div>
+         
+                     
+          </div>
+
+          <div id="completeList">
+            <div class="courseCard">
+              <div class="image-container">
+                  <img src="../sidebar/UI Progress img/coursera1.jpg" alt="">
+              </div>
+              <div class="titleCardContent">
+                  <h3>Course | <span>NDKAK</span></h3>
+                  <h4>Cybersecurity Fundamentals</h4>
+                  <p>Need more time to complete this course? Push your estimated end date to 12/29/2022 PST and achieve your goal.
+                  </p>
+              </div>
+              <div class="titleCardBtn">
+                <div class="mainButtonOption">
+                  <button id="optionBtn1">
+                    <h1>Go to course</h1>
+                    <img src="../sidebar/sidebar/chevron-right.png" alt="">
+                </button>
+                  <div id="optionBtn2"> <a href="#">Set deadlines</a> </div>
                 </div>
-                <div class="courseCard">
-                    <div class="image-container">
-                        <img src="../Mini-Project-2/MINI PROJECT 2 (COURSE PAGE)/Images/img1.png" alt="">
-                    </div>
-                    <div class="titleCardContent">
-                        <h3>Course | <span>NDKAK</span></h3>
-                        <h4>Cybersecurity Fundamentals</h4>
-                        <p>Need more time to complete this course? Push your estimated end date to 12/29/2022 PST and achieve your goal.
-                        </p>
-                    </div>
+               <i><img src="../sidebar/sidebar/dots-vertical.png" alt=""></i>
                 </div>
-                <div class="courseCard">
-                    <div class="image-container">
-                        <img src="../Mini-Project-2/MINI PROJECT 2 (COURSE PAGE)/Images/img1.png" alt="">
-                    </div>
-                    <div class="titleCardContent">
-                        <h3>Course | <span>NDKAK</span></h3>
-                        <h4>Cybersecurity Fundamentals</h4>
-                        <p>Need more time to complete this course? Push your estimated end date to 12/29/2022 PST and achieve your goal.
-                        </p>
-                    </div>
-                </div>
+          </div>
+
+    
+             
+        </div>
+                
         
         </menu>
         <aside class="Main-aside">
@@ -464,33 +615,97 @@
                 </div>
               </div>
             </div>
+
+            <!-- calendar 2 -->
          
 
           <!-- Todo list -->
-          <div class="todoContainer">
-            <h2>Type your notes here!</h2>
-            <h3>Add Item</h3>
-            <p>
-                <input id="new-task" type="text"><button>Add</button>
-            </p>
-    
-            <h3>Todo</h3>
-            <ul id="incomplete-tasks">
-                <li><input type="checkbox"><label></label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
-                <li><input type="checkbox"><label></label><input type="text" value="Go Shopping"><button class="edit">Edit</button><button class="delete">Delete</button></li>
-            </ul>
-    
-            <h3>Completed</h3>
-            <ul id="completed-tasks">
-                <li><input type="checkbox" checked><label></label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
-            </ul>
-        </div>
     
           </aside>
     </main>
-    </section>
+    
+    <!-- Third Section -->
+    <main class="main-feature footer">
+      <article >
+        <p>Bagumbayan, Quezon City, Philippines</p>
+        <p>Office Hours: Monday-Friday, 9AM -6PM</p>
+        <p >(808) 637-9287</p> 
+        <p >(808) 637-9287</p>
+        <p>Follow us</p>
+        <ul id="footer-icon">
+            <li><a href="#"><i class="ri-twitter-fill" style="color: #19BADD;"></i></a></li>
+            <li><a href="#"><i class="ri-youtube-fill" style="color: #EF2A2A;"></i></a></li>
+            <li><a href="#"><i class="ri-facebook-circle-fill" style="color: #FFFFFF;"></i></a></li>
+            <li><a href="#"><i class="ri-instagram-fill" style="color: #CCB124;"></i></a></li>
+        </ul>
+    </article>
+
+    <article>
+        <img src="./Assest/image_course_banner/Assets/images/logo.png" alt="logo" class="img-logo">
+        <h1>Cyber Security
+           Course</h1>
       
+    </article>
+
+    <article>
+        <h3>Working in partnership with</h3>
+        <img src="./Assest/image_course_banner/Assets/images/partnership.png" alt="img-partnership" class="img-partnership">
+    </article>
+  </main>
+  
+  
+    </section>
+
+<!-- ChatBot -->
+<!-- ChatBot -->
+<div class="chat_icon">
+	<i class="fa fa-comments" aria-hidden="true"></i>
+</div>
+<div class="chat_box">
+	<div class="my-conv-form-wrapper">
+		<form action="" method="GET" class="hidden">
+
+      <select data-conv-question="Hello! How can I help you" name="category">
+        <option value="WebDevelopment">Cyber Security?</option>
+        <option value="DigitalMarketing">Learn from Zero to Hero ?</option>
+      </select>
+
+      <div data-conv-fork="category">
+        <div data-conv-case="WebDevelopment">
+          <input type="text" name="domainName" data-conv-question="Please, tell what do you want to enroll">    
+        </div>
+        <div data-conv-case="DigitalMarketing" data-conv-fork="first-question2">
+          <input type="text" name="companyName" data-conv-question="Please tell what kind of course do you want"> 
+        </div>
+      </div>
+
+      <input type="text" name="name" data-conv-question="Please, Enter your name">
+
+      <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you." data-no-answer="true">
+
+      <input data-conv-question="Enter your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?">
+
+      <select data-conv-question="Please Confirm">
+        <option value="Yes">Thanks! Your account has been recorded</option>
+      </select>
+
+  	</form>
+	</div>
+</div>
+<!-- ChatBot end -->
+
+<main class="main-feature " id="chatBotID">
+
+</main>
+<main class="main-feature footer1">
+</main>
+    <script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.convform.js"></script>
+    <script type="text/javascript" src="./js/custom.js"></script>
     <script src="./dashboard.js"></script>
+    <script src="./navbar.js"></script>
+    <script src="./app.js"></script>
     <script src="./timer.js"></script>
+    <script></script>
 </body>
 </html>

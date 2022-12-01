@@ -484,7 +484,3 @@ function initClock() {
 }
 
 // END CLOCK SCRIPT
-
-
-
-

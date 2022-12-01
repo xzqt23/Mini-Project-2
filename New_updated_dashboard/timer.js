@@ -27,3 +27,55 @@ function showTime(){
 }
 
 showTime();
+
+
+
+// function myProgress(){
+
+//     if(displayProgress.style.display = 'none'){
+//         displayProgress.style.display = 'block'
+//     }
+//     else{
+//         displayProgress.style.display = 'none'
+//     }
+
+// }
+
+// function myComplete(){
+//     if(displayComplete.style.display = 'none'){
+//         displayComplete.style.display = 'block'
+//     }
+//     else{
+//         displayComplete.style.display = 'none'
+//     }
+
+// }
+
+var displayProgress = document.querySelector('#progressList')
+var displayComplete = document.querySelector('#completeList')
+
+
+function myProgress(){
+   if( displayProgress.style.display = 'none'){
+    displayProgress.style.display = 'block' 
+   }
+   else{
+    displayProgress.style.display = 'none'
+   }
+}
+
+
+function myComplete(){
+    if( displayComplete.style.display = 'none'){
+        displayComplete.style.display = 'block' 
+    }
+    else{
+        displayComplete.style.display = 'none'
+    }
+ }
+
+
+
+
+
+
