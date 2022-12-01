@@ -1,0 +1,198 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand img {
+  width: 4em;
+}
+
+
+.navbar {
+  /* background: #191C5C; */
+  /* background: rgba(0, 0, 0, 0.4); */
+  backdrop-filter: blur(2.35589px);
+}
+
+body{
+    overflow-x: hidden;
+    background: #080623;
+}
+
+.firstSectionBackgroundCards{
+  background-color: rgba(43, 41, 67, 70%);
+}
+
+.navbar{
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.navbar-brand img{
+    height: 3rem;
+}
+
+.caption{
+    position: absolute;
+    top: 77%;
+    width: 100%;
+}
+
+.textSection3 {
+  text-align: justify;
+}
+
+
+
+
+
+  .banner {
+    height: 70px;
+    position: relative;
+    overflow: hidden;
+    font-family: Roobert;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    min-width: 200vw;
+    top: 12px;
+    animation: bannermove 16s linear infinite;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  @keyframes bannermove {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .banner div {
+    padding: 10px;
+  }
+  
+   #marq{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+  } 
+
+  .card{
+    width: 14rem;
+  }
+  .card-flip > div {
+    backface-visibility: hidden;
+    transition: transform 300ms;
+    transition-timing-function: linear;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+  }
+  
+  .card-front {
+    transform: rotateY(0deg);
+  }
+  
+  .card-back {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+  }
+  
+  .card-flip:hover .card-front {
+    transform: rotateY(-180deg);
+  }
+    
+  .card-flip:hover .card-back {
+    transform: rotateY(0deg);
+  }
+
+  #col-img img{
+    height: 450px;
+  }
+
+  #container3{
+    margin-top: 75px;
+    margin-bottom: 40px;
+  }
+
+  @media only screen and (max-width: 991px){
+    #col-img img{
+      height: 320px;
+    }
+ }
+
+ @media only screen and (max-width: 280px){
+  #col-img img{
+    height: 220px;
+  }
+}
+
+#column2{
+  padding-top: 30px;
+  padding-right: 80px;
+}
+
+.left{
+  padding-bottom: 30px;
+}
+
+#carouselExampleControls2{
+  padding-top: 80px;
+  max-width: 100%;
+}
+
+#carousel-active2{
+  width: 100%;
+}
+
+.carousel-inner2{
+  width: 100%;
+}
+
+
+@media only screen and (max-width: 280px){
+    
+  #card-container{
+    flex-direction: column;
+  }
+
+  #video{
+    display: none;
+    visibility:hidden;
+  }
+
+  #card-container{
+    bottom: 155em;
+    top: 2947px;
+    gap: 3px;
+    left: 8em;
+  }
+
+  #container-h1{
+    left: 2em;
+    top: 101em;
+  }
+}
+
+.footerCourse {
+  background-color:#191C5C ;
+}
+
+#card {
+   /* width: 25%;
+  height: 100%;  */
+  background: rgba(0,0,0,0.25);
+  border-radius: 0.4em;
+  box-shadow: 0.3em 0.3em 0.7em #00000015;
+  transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: rgb(0, 250, 250) 0.2em solid;
+ }
+ 
+ #card:hover {
+  border: #006fff 0.2em solid;
+ }
+
